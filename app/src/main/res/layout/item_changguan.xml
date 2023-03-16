@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="10dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/iv_ChangGuan"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            app:riv_corner_radius="20dp"/>
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_ChangGuanName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="浙江省科技馆"
+        android:textColor="#000000"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_ChangGuanDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/changGuanDescription"
+            android:text="5.0"
+            android:textColor="@color/changGuan_main"
+            android:drawableRight="@mipmap/stardrawable"/>
+
+        <TextView
+            android:id="@+id/tv_ChangGuanPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="参考价："
+            android:textSize="@dimen/changGuanDescription"
+            android:textColor="@color/changGuan_title"
+            android:layout_marginLeft="80dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/address_cg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_ChangGuanAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="15"
+            android:textSize="@dimen/changGuanDescription"
+            android:text="杭州市西湖区龙井路"
+            android:textColor="@color/changGuan_main"
+            android:drawableLeft="@mipmap/coordinate"/>
+
+        <Button
+            android:id="@+id/button_cg"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="到这去"
+            android:textSize="9sp"
+            android:gravity="center"
+            android:background="@drawable/shape_changguan_bg"
+            android:layout_marginRight="20dp" />
+    </LinearLayout>
+        <TextView
+            android:id="@+id/tv_chanGuanPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/phone"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:id="@+id/tv_chanGuantime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/clock"/>
+
+</LinearLayout>

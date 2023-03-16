@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/changGuanFragment"
+        android:icon="@drawable/selector_changguan_nav"
+        android:title="@string/nav_changguan_title" />
+
+    <item
+        android:id="@+id/weiKeTangFragment"
+        android:icon="@drawable/selector_micro_classroom"
+        android:title="@string/nav_weiketang_title" />
+
+    <item
+        android:id="@+id/shopFragment"
+        android:icon="@drawable/shopicon_selector"
+        android:title="@string/nav_shop_title" />
+
+
+
+<!--    <item-->
+<!--        android:id="@+id/lunTanFragment"-->
+<!--        android:icon="@drawable/selector_changguan_nav"-->
+<!--        android:title="@string/nav_luntan_title" />-->
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/selector_changguan_nav"
+        android:title="@string/nav_home_title" />
+
+
+
+</menu>

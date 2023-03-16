@@ -1,0 +1,62 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:4.2.2"
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        jcenter() // Warning: this repository is going to shut down soon
+        maven { url 'https://jitpack.io' }
+
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext{
+
+    isDebug = false  // 当它为true时，调试模式，组件可以单独运行。 如果是false，正式编译打包的模式
+
+    android = [
+            compileSdkVersion: 31,
+            minSdkVersion    : 21,
+            targetSdkVersion : 30,
+            buildToolsVersion: "30.0.3",
+            versionCode      : 1,
+            versionName      : "1.0"
+    ]
+
+    applicationId = [
+            "app"  : "com.example.xingyue",
+            "login" : "com.example.module_login",
+            "microclassroom" : "com.example.module_microclassroom",
+            "navigation" : "com.example.module_navigation",
+            "shop" : "com.example.module_shop",
+            "stadium" : "com.example.module_stadium",
+            "user" : "com.example.module_user"
+    ]
+
+    library = [
+            "appcompat"       : "androidx.appcompat:appcompat:1.2.0",
+            "material"        : "com.google.android.material:material:1.2.1",
+            "constraintlayout": "androidx.constraintlayout:constraintlayout:2.0.1"
+    ]
+
+    libARouter = "com.alibaba:arouter-api:1.5.1"
+    libARouterCompiler = "com.alibaba:arouter-compiler:1.5.1"
+    libGson = "com.google.code.gson:gson:2.8.6"
+
+}

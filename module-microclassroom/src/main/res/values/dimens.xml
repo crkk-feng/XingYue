@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="shop_fragment_navigation_button_size">40dp</dimen>
+    <dimen name="text_mid_size">22sp</dimen>
+    <dimen name="text_small_size">18sp</dimen>
+    <dimen name="text_x_small_size">12sp</dimen>
+    <dimen name="channel_small_image_size">60dp</dimen>
+    <dimen name="CreateChannelAdapter">30dp</dimen>
+    <dimen name="dp_20">20dp</dimen>
+</resources>

@@ -1,0 +1,99 @@
+plugins {
+    id 'com.android.application'
+}
+
+def cfg = rootProject.ext
+
+android {
+    compileSdkVersion cfg.android.compileSdkVersion
+    buildToolsVersion cfg.android.buildToolsVersion
+
+    defaultConfig {
+        applicationId cfg.applicationId.app
+        minSdkVersion cfg.android.minSdkVersion
+        targetSdkVersion cfg.android.targetSdkVersion
+        versionCode cfg.android.versionCode
+        versionName cfg.android.versionName
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        ndk {
+            // 设置支持的SO库架构
+            abiFilters 'armeabi'/*, 'x86'*///, 'armeabi-v7a', 'x86_64', 'arm64-v8a'
+        }
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+}
+
+repositories {
+    maven { url "https://s01.oss.sonatype.org/content/groups/public" }
+    maven {
+        url "https://jitpack.io"
+    }
+}
+
+dependencies {
+    if (!cfg.isDebug) {
+        implementation project(':module-create')
+        implementation project(':lib-base')
+        implementation project(':module-shop')
+        implementation project(':module-microclassroom')
+    }
+
+    implementation 'org.jetbrains:annotations:15.0'
+    implementation files('G:\\Project\\Android\\XingYue\\app\\libs\\TingPhoneOpenSDK_7.5.11.jar')
+    implementation files('G:\\Project\\Android\\XingYue\\app\\libs\\XmDownload_2.0.jar')
+    implementation files('G:\\Project\\Android\\XingYue\\app\\libs\\XmlyOAuth2SDK_V2.0.jar')
+    implementation files('G:\\Project\\Android\\XingYue\\app\\libs\\xutil3.3.6.jar')
+    implementation project(path: ':cartlayout')
+    implementation 'androidx.navigation:navigation-fragment:2.3.0'
+    implementation 'androidx.navigation:navigation-ui:2.3.0'
+
+
+
+    //标题栏
+    implementation 'com.hjq:titlebar:5.0'
+    //轮播依赖
+    implementation 'io.github.youth5201314:banner:2.2.2'
+    //Glide框架依赖
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+
+    //网络需要准备的东西
+    implementation project(':magicindicator')
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+
+    implementation "io.reactivex.rxjava3:rxjava:3.0.13"
+
+    //完整版引入
+    implementation 'com.github.CarGuo.GSYVideoPlayer:GSYVideoPlayer:v8.1.8-release-jitpack'
+
+    // 网络请求框架：https://github.com/getActivity/EasyHttp
+    implementation 'com.github.getActivity:EasyHttp:10.8'
+    implementation 'com.drakeet.multitype:multitype:4.3.0'
+    implementation 'io.github.bmob:android-sdk:3.8.11'
+
+
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.7'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+}

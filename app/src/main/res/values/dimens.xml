@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="changGuanName">18sp</dimen>
+    <dimen name="changGuanDescription">13sp</dimen>
+    <dimen name="changGuanAddress">14sp</dimen>
+
+</resources>

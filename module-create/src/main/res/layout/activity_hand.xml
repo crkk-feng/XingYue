@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/hand_background"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/handback1"
+    tools:context=".HandActivity">
+
+    <Button
+        android:id="@+id/hand_btn_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="5dp"
+        android:background="@mipmap/login_back"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/hand_btn_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#ffffff"
+        android:src="@mipmap/btn_add"
+        android:layout_margin="15dp"
+        app:maxImageSize="55dp"
+        app:borderWidth="0dp"
+        app:fabSize="normal"
+        app:layout_anchorGravity="bottom"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <com.example.module_create.widgets.PaletteView
+        android:id="@+id/hand_dv_draw"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/hand_iv_left"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:src="@mipmap/font"/>
+
+    <ImageView
+        android:id="@+id/hand_iv_right"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:src="@mipmap/font"/>
+
+    <TextView
+        android:id="@+id/hand_btn_input"
+        android:layout_width="330dp"
+        android:layout_height="140dp"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:layout_marginTop="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/hand_ll_img"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+        <ImageView
+            android:id="@+id/hand_back1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:src="@mipmap/handback1"/>
+        <ImageView
+            android:id="@+id/hand_back2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:src="@mipmap/handback2"/>
+        <ImageView
+            android:id="@+id/hand_back3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:src="@mipmap/handback3"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/hand_tool"
+        android:layout_width="220dp"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/hand_draw_background"
+        android:gravity="center_horizontal">
+        <ImageView
+            android:id="@+id/hand_undo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/hand_back"/>
+        <ImageView
+            android:id="@+id/hand_redo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/hand_forward"/>
+        <ImageView
+            android:id="@+id/hand_pen"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/hand_draw"/>
+        <ImageView
+            android:id="@+id/hand_eraser"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/hand_eraser"/>
+        <ImageView
+            android:id="@+id/hand_clear"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/hand_cut"/>
+    </LinearLayout>
+</RelativeLayout>

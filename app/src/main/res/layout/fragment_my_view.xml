@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/iv_large_cover"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY" />
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/viv_small_cover"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/iv_large_cover"
+        android:layout_marginTop="-40dp"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"
+        app:riv_corner_radius="40dp"
+        android:src="@mipmap/myheadimage"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_tables"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/viv_small_cover"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:overScrollMode="never"/>
+
+
+</RelativeLayout>

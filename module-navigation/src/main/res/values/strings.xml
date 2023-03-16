@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">module-navigation</string>
+
+    <!--    主页导航栏-->
+    <string name="nav_changguan_title">场馆</string>
+    <string name="nav_shop_title">商城</string>
+    <string name="nav_weiketang_title">微课堂</string>
+    <string name="nav_luntan_title">论坛</string>
+    <string name="nav_home_title">我的</string>
+</resources>

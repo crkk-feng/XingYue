@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="120dp">
+
+    <TextView
+        android:id="@+id/tv_publish_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        tools:text="新闻标题"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:textSize="10sp"
+        android:layout_marginTop="1dp"/>
+
+    <ImageView
+        android:id="@+id/news_imageview"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        tools:srcCompat="@tools:sample/avatars"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_10"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/news_imageview"
+        android:layout_marginTop="@dimen/dp_20"
+        tools:text="新闻标题"
+        android:textColor="#232323"
+        android:layout_marginStart="20dp"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/news_imageview"
+        android:layout_below="@+id/tv_title"
+        tools:text="新闻标题"
+        android:textColor="#232323"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:lines="2"/>
+
+    <TextView
+        android:id="@+id/tv_publisher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        tools:text="新闻标题"
+        android:layout_marginRight="@dimen/dp_10"/>
+</RelativeLayout>

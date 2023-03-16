@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">星月</string>
+    <!--    欢迎页面-->
+    <string name="register_text">注册</string>
+    <string name="login_text">登录</string>
+
+    <!--    title-->
+    <string-array name="indicator_name">
+        <item>
+            图书
+        </item>
+        <item>
+            食品
+        </item>
+        <item>
+            文具用品
+        </item>
+        <item>
+            玩具模型
+        </item>
+        <item>
+            服装饰品
+        </item>
+        <item>
+            积分兑换
+        </item>
+    </string-array>
+
+    <!--    主页导航栏-->
+    <string name="nav_changguan_title">场馆</string>
+    <string name="nav_shop_title">商城</string>
+    <string name="nav_weiketang_title">微课堂</string>
+    <string name="nav_luntan_title">论坛</string>
+    <string name="nav_home_title">我的</string>
+
+    <!--    喜马拉雅订阅-->
+    <string name="click_play_tips_text">点击播放</string>
+    <string name="listener_as_you_like_text">随便听听</string>
+    <string name="cancel_sub_tips_text">取消订阅</string>
+    <string name="sub_tips_text">+ 订阅</string>
+    <string name="cancel_sub_success">取消订阅成功</string>
+    <string name="cancel_sub_failed">取消订阅失败</string>
+    <string name="no_sub_content_tips_text">没有订阅内容，赶紧去订阅吧！</string>
+    <string name="search_no_content_tips_text">没有相关内容，请别强行进行搜索！</string>
+
+    <!--    图书页面需要的文字-->
+    <string name="tushudrinkmoon">【当当网 正版包邮】月亮与六便士 新版未删节插图珍藏版毛姆原著徐淳刚译获波比小说奖豆瓣阅读榜世界名著外国小说畅销</string>
+    <string name="tushudayueliang">喝月光的女孩 喝掉月亮的女孩 英文原版小说 纽伯瑞儿童文学奖 孩 赠音频 The Girl Who Drank the Moon 进口英语书籍少儿课外读物</string>
+    <string name="tushuyueliangmimi">【当当网 正版包邮】月亮与六便士 新版未删节插图珍藏版毛姆原著徐淳刚译获波比小说奖豆瓣阅读榜世界名著外国小说畅销</string>
+    <string name="tushusongshuxiansheng">【当当网正版童书】海豚绘本花园：松鼠先生和月亮（精）乐于助人、敢想敢做的松鼠先生 鼓励孩子释放好奇心、积</string>
+    <string name="tushuundermoon">在月亮下面(*级上.适合初一初二.新版)(书虫.牛津英汉双语读物)</string>
+    <string name="tushuliubianshi">【当当网 正版包邮】月亮与六便士 新版未删节插图珍藏版毛姆原著徐淳刚译获波比小说奖豆瓣阅读榜世界名著外国小说畅销</string>
+
+    <string name="xingyuediantai">星月电台</string>
+    <string name="xingyuepindao">星月频道</string>
+
+
+    <string name="play_mode_order_text">顺序播放</string>
+    <string name="play_mode_random_text">随即播放</string>
+    <string name="play_mode_list_play_text">列表循环</string>
+    <string name="play_mode_single_play_text">单曲循环</string>
+    <string name="order_text">顺序</string>
+    <string name="revers_text">逆序</string>
+
+
+    <string name="playing_tips_next">正在播放</string>
+    <string name="pause_tips_next">暂停播放</string>
+
+
+    <string name="rmb_X">¥&#160;%1$.2f</string>
+    <string name="cart">购物车(%1$d)</string>
+    <string name="all_select">全选</string>
+    <string name="edit_done">取消编辑</string>
+    <string name="go_settle_X">去结算(%1$d)</string>
+    <string name="go_settle">去结算</string>
+    <string name="delete_X">删除(%1$d)</string>
+    <string name="total_">合计：</string>
+    <string name="edit">编辑</string>
+    <string name="normal_tip_X">购物车中有 %1$d 件商品已经降价，快去看看</string>
+
+    <string name="login_hint">请输入账户名</string>
+    <string name="password_hint">请输入密码</string>
+    <string name="name_hint">请输入推荐人id(可选)</string>
+    <string name="register">注册</string>
+    <string name="shop_item_button_buy">购买</string>
+</resources>

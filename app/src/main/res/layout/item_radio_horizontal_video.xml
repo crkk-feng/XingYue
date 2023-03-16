@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="110dp"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/video_image_item"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_gravity="center_horizontal"
+        app:riv_corner_radius="5dp"
+        android:scaleType="fitXY"/>
+    <TextView
+        android:id="@+id/tv_video_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="12sp"
+        android:textColor="#333333"/>
+</LinearLayout>
